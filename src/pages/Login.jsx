@@ -32,7 +32,7 @@ const Login = () => {
         e.preventDefault()
         try {
             setIsLoading(true)
-            const res = await axios.post(`http://localhost:8000/user/login`, formData, {
+            const res = await axios.post(`https://product-manager-backend-1.onrender.com/user/login`, formData, {
                 headers: { "Content-Type": "application/json" }
             })
 
@@ -137,7 +137,7 @@ const Login = () => {
 
           <Button
             type="button"
-            onClick={() => window.open("http://localhost:8000/auth/google", "_self")}
+            onClick={() => window.open("https://product-manager-backend-1.onrender.com/auth/google", "_self")}
             variant="outline"
             className="w-full h-12 flex items-center justify-center gap-2"
           >
