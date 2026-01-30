@@ -22,7 +22,7 @@ const Navbar = () => {
   const logoutHandler = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8000/user/logout",
+        "https://product-manager-backend-1.onrender.com/user/logout",
         {},
         {
           headers: {

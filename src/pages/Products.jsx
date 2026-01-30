@@ -11,7 +11,7 @@ const Products = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/product")
+      const res = await axios.get("https://product-manager-backend-1.onrender.com/product")
       setProducts(res.data)
     } catch (error) {
       console.error(error)
@@ -23,7 +23,7 @@ const Products = () => {
   }, [])
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:8000/product/${id}`)
+    await axios.delete(`https://product-manager-backend-1.onrender.com/product/${id}`)
     fetchProducts()
   }
 
@@ -35,7 +35,7 @@ const Products = () => {
 
   const handleTogglePublish = async (id) => {
   try {
-    await axios.patch(`http://localhost:8000/product/${id}/publish`)
+    await axios.patch(`https://product-manager-backend-1.onrender.com/product/${id}/publish`)
     fetchProducts()
    } catch (error) {
     console.error(error)

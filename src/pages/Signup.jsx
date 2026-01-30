@@ -33,7 +33,7 @@ const Signup = () => {
             setIsLoading(true)
 
             const res = await axios.post(
-                "http://localhost:8000/user/register",
+                "https://product-manager-backend-1.onrender.com/user/register",
                 formData,
                 {
                     headers: {

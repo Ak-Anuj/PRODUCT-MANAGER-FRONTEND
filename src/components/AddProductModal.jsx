@@ -53,13 +53,13 @@ const AddProductModal = ({ open, onClose, editData , onSuccess }) => {
     if (editData) {
       // UPDATE
       await axios.put(
-        `http://localhost:8000/product/${editData._id}`,
+        `https://product-manager-backend-1.onrender.com/product/${editData._id}`,
         formData
       )
     } else {
       // CREATE
       await axios.post(
-        "http://localhost:8000/product",
+        "https://product-manager-backend-1.onrender.com/product",
         formData
       )
     }
