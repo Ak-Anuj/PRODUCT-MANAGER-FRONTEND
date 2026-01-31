@@ -89,7 +89,7 @@ const Login = () => {
                 <div className="w-full max-w-md sm:max-w-lg">
 
                     <h2 className="text-2xl sm:text-3xl font-bold text-[#0B2A78] mb-6 sm:mb-8 text-center lg:text-left">
-                        Login to your Productr Account
+                        Login to your Product Account
                     </h2>
 
                     <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
